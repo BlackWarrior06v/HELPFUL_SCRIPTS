@@ -4,3 +4,4 @@ ffmpeg -framerate 5 -i ImageColor_%0d.jpg -c:v libx264 -pix_fmt yuv420p movie.mp
 
 !replace %0d with the number of zeros your files has
 !if ImageColor_0001.jpg use %04d
+!to resize -vf "scale=7748:2476"
